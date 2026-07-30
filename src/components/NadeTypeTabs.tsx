@@ -24,10 +24,10 @@ export function NadeTypeTabs({ mapId, side, active }: NadeTypeTabsProps) {
           <Link
             key={nadeType}
             to={`/maps/${mapId}/${side}/${nadeType}`}
-            className={`flex shrink-0 items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors ${
+            className={`flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold whitespace-nowrap transition-all active:scale-95 ${
               isActive
-                ? "border-gold/40 bg-gold/10 text-gold"
-                : "border-border bg-surface text-gray-400 hover:bg-surface-hover"
+                ? "border-gold/50 bg-gold/15 text-gold shadow-sm shadow-gold/10"
+                : "border-border bg-surface text-gray-400 hover:border-border hover:bg-surface-hover hover:text-gray-200"
             }`}
           >
             <Icon size={16} />

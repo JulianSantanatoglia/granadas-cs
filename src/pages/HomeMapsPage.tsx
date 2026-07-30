@@ -7,9 +7,9 @@ export default function HomeMapsPage() {
 
   return (
     <PageContainer>
-      <header>
-        <h1 className="text-2xl font-bold text-gray-100">Granadas CS2</h1>
-        <p className="text-sm text-gray-400">Lineups por mapa, sin paywall.</p>
+      <header className="flex flex-col items-center text-center">
+        <h1 className="text-2xl font-extrabold tracking-tight text-gray-50">Granadas</h1>
+        <p className="text-sm text-gray-400">Elegí un mapa para ver los lineups.</p>
       </header>
       <div className="grid grid-cols-1 justify-items-center gap-3 sm:grid-cols-3 sm:justify-items-stretch">
         {maps.map((map) => (

@@ -24,6 +24,18 @@ export function getMap(mapId: MapId): MapMeta | undefined {
   return getMaps().find((m) => m.id === mapId);
 }
 
+const MAP_BACKGROUNDS: Partial<Record<MapId, string>> = {
+  dust2: "/images/background/dust2.avif",
+  mirage: "/images/background/mirage.jpg",
+  inferno: "/images/background/inferno.jpg",
+  nuke: "/images/background/nuke.jpg",
+  ancient: "/images/background/ancient.jpg",
+};
+
+export function getMapBackground(mapId: MapId): string | undefined {
+  return MAP_BACKGROUNDS[mapId];
+}
+
 export function getLineupsForMap(mapId: MapId): Lineup[] {
   return lineupsByMap[mapId] ?? [];
 }
@@ -45,6 +57,13 @@ export function getAllLineups(): Lineup[] {
 }
 
 const NADE_TYPES: NadeType[] = ["smoke", "molotov", "flash", "he"];
+
+export const NADE_TYPE_LABELS: Record<NadeType, string> = {
+  smoke: "Smoke",
+  molotov: "Molotov",
+  flash: "Flash",
+  he: "HE",
+};
 
 export function getCountsForMap(mapId: MapId): Record<NadeType, number> {
   const lineups = getLineupsForMap(mapId);

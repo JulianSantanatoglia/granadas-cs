@@ -11,7 +11,10 @@ export default function FavoritesPage() {
 
   return (
     <PageContainer>
-      <h1 className="text-2xl font-bold text-gray-100">Favoritos</h1>
+      <div className="flex flex-col items-center text-center">
+        <h1 className="text-2xl font-extrabold tracking-tight text-gray-50">Favoritos</h1>
+        <p className="text-sm text-gray-400">Tus lineups guardados.</p>
+      </div>
 
       {favorites.length === 0 ? (
         <p className="text-sm text-gray-500">
@@ -19,7 +22,7 @@ export default function FavoritesPage() {
           lineup para guardarlo acá.
         </p>
       ) : (
-        <div className="flex flex-col gap-2">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {favorites.map((lineup) => (
             <LineupCard
               key={lineup.id}

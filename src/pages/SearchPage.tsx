@@ -8,7 +8,10 @@ export default function SearchPage() {
 
   return (
     <PageContainer>
-      <h1 className="text-2xl font-bold text-gray-100">Buscar</h1>
+      <div className="flex flex-col items-center text-center">
+        <h1 className="text-2xl font-extrabold tracking-tight text-gray-50">Buscar</h1>
+        <p className="text-sm text-gray-400">Por mapa, zona o posición.</p>
+      </div>
       <SearchBar value={query} onChange={setQuery} />
 
       {query.trim() === "" ? (
@@ -18,7 +21,7 @@ export default function SearchPage() {
       ) : results.length === 0 ? (
         <p className="text-sm text-gray-500">Sin resultados para "{query}".</p>
       ) : (
-        <div className="flex flex-col gap-2">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {results.map(({ lineup, mapName }) => (
             <LineupCard
               key={lineup.id}

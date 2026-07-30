@@ -8,7 +8,7 @@ interface ZoneListProps {
 export function ZoneList({ zones }: ZoneListProps) {
   if (zones.length === 0) {
     return (
-      <p className="rounded-lg border border-dashed border-border p-6 text-center text-sm text-gray-500">
+      <p className="rounded-2xl border border-dashed border-border p-6 text-center text-sm text-gray-500">
         Todavía no hay lineups cargados para esta combinación.
       </p>
     );
@@ -18,7 +18,7 @@ export function ZoneList({ zones }: ZoneListProps) {
     <div className="flex flex-col gap-6">
       {zones.map(({ zone, lineups }) => (
         <div key={zone} className="flex flex-col gap-2">
-          <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+          <h3 className="border-l-2 border-gold/50 pl-2 text-xs font-bold uppercase tracking-wider text-gray-400">
             {zone}
           </h3>
           <div className="flex flex-col gap-2">

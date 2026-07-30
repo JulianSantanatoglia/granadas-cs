@@ -4,6 +4,7 @@ import CalloutDetailPage from "./pages/CalloutDetailPage";
 import CalloutsPage from "./pages/CalloutsPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import HomeMapsPage from "./pages/HomeMapsPage";
+import HubPage from "./pages/HubPage";
 import LineupDetailPage from "./pages/LineupDetailPage";
 import NadeTypePage from "./pages/NadeTypePage";
 import SearchPage from "./pages/SearchPage";
@@ -14,7 +15,8 @@ export function AppRouter() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppShell />}>
-          <Route path="/" element={<HomeMapsPage />} />
+          <Route path="/" element={<HubPage />} />
+          <Route path="/maps" element={<HomeMapsPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/callouts" element={<CalloutsPage />} />
@@ -23,7 +25,7 @@ export function AppRouter() {
           <Route path="/maps/:mapId/:side" element={<NadeTypePage />} />
           <Route path="/maps/:mapId/:side/:nadeType" element={<NadeTypePage />} />
           <Route path="/lineup/:lineupId" element={<LineupDetailPage />} />
-          <Route path="*" element={<HomeMapsPage />} />
+          <Route path="*" element={<HubPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -27,7 +27,7 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
 
   if (failed) {
     return (
-      <div className="flex aspect-video w-full items-center justify-center rounded-lg border border-border bg-surface text-sm text-gray-500">
+      <div className="flex aspect-video w-full items-center justify-center rounded-2xl border border-white/10 bg-surface text-sm text-gray-500">
         No se pudo cargar el video.
       </div>
     );
@@ -76,7 +76,7 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
         preload="metadata"
         loop={loop}
         poster={poster}
-        className="aspect-video w-full rounded-lg border border-border bg-black"
+        className="aspect-video w-full rounded-2xl border border-white/10 bg-black shadow-md shadow-black/30"
         onError={() => setFailed(true)}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
@@ -95,7 +95,7 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
         <source src={url} />
       </video>
 
-      <div className="flex flex-col gap-2 rounded-lg border border-border bg-surface p-3">
+      <div className="flex flex-col gap-2 rounded-2xl border border-white/10 bg-surface p-3 shadow-md shadow-black/20">
         <div className="flex items-center gap-2">
           <span className="w-10 shrink-0 text-right text-xs tabular-nums text-gray-400">
             {formatTime(currentTime)}
@@ -120,14 +120,14 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
             <button
               type="button"
               onClick={() => skip(-SKIP_SECONDS)}
-              className="rounded-md border border-border px-2 py-1 text-xs text-gray-300 hover:bg-surface-hover"
+              className="rounded-lg border border-border px-2.5 py-1.5 text-xs font-semibold text-gray-300 transition-all active:scale-95 hover:bg-surface-hover"
             >
               -{SKIP_SECONDS}s
             </button>
             <button
               type="button"
               onClick={togglePlay}
-              className="flex items-center justify-center rounded-md border border-accent/30 bg-accent/10 p-2 text-accent hover:bg-accent/20"
+              className="flex items-center justify-center rounded-full border border-accent/40 bg-accent/15 p-2.5 text-accent transition-all active:scale-90 hover:bg-accent/25"
               aria-label={isPlaying ? "Pausar" : "Reproducir"}
             >
               {isPlaying ? <Pause size={16} /> : <Play size={16} />}
@@ -135,7 +135,7 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
             <button
               type="button"
               onClick={() => skip(SKIP_SECONDS)}
-              className="rounded-md border border-border px-2 py-1 text-xs text-gray-300 hover:bg-surface-hover"
+              className="rounded-lg border border-border px-2.5 py-1.5 text-xs font-semibold text-gray-300 transition-all active:scale-95 hover:bg-surface-hover"
             >
               +{SKIP_SECONDS}s
             </button>
@@ -147,9 +147,9 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
                 key={value}
                 type="button"
                 onClick={() => setPlaybackSpeed(value)}
-                className={`rounded-md border px-2 py-1 text-xs ${
+                className={`rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition-all active:scale-95 ${
                   speed === value
-                    ? "border-gold/40 bg-gold/10 text-gold"
+                    ? "border-gold/50 bg-gold/15 text-gold"
                     : "border-border text-gray-400 hover:bg-surface-hover"
                 }`}
               >
@@ -161,9 +161,9 @@ export function VideoPlayer({ url, poster }: VideoPlayerProps) {
               onClick={toggleLoop}
               aria-pressed={loop}
               aria-label="Repetir"
-              className={`flex items-center justify-center rounded-md border p-1.5 ${
+              className={`flex items-center justify-center rounded-full border p-2 transition-all active:scale-90 ${
                 loop
-                  ? "border-gold/40 bg-gold/10 text-gold"
+                  ? "border-gold/50 bg-gold/15 text-gold"
                   : "border-border text-gray-400 hover:bg-surface-hover"
               }`}
             >

@@ -24,7 +24,7 @@ export function MapCard({ map, to, showNadeCounts = true }: MapCardProps) {
   return (
     <Link
       to={to ?? `/maps/${map.id}`}
-      className="group flex w-full max-w-[90%] flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-accent/50 hover:bg-surface-hover sm:max-w-none"
+      className="group flex w-full max-w-[90%] flex-col overflow-hidden rounded-2xl border border-white/10 bg-surface shadow-md shadow-black/20 transition-all active:scale-[0.98] hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg hover:shadow-black/30 sm:max-w-none"
     >
       {imageFailed ? (
         <div className="flex aspect-video w-full items-center justify-center bg-gradient-to-br from-surface-hover to-bg">

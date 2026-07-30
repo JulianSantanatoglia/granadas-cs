@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 export type BadgeTone = "neutral" | "accent" | "gold";
 
 const toneClasses: Record<BadgeTone, string> = {
-  neutral: "bg-surface-hover text-gray-300 border-border",
-  accent: "bg-accent/10 text-accent border-accent/30",
-  gold: "bg-gold/10 text-gold border-gold/30",
+  neutral: "bg-surface-hover text-gray-200 border-white/10",
+  accent: "bg-accent/25 text-accent-hover border-accent/40 backdrop-blur-sm",
+  gold: "bg-gold/25 text-gold-hover border-gold/40 backdrop-blur-sm",
 };
 
 interface BadgeProps {

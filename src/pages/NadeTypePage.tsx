@@ -1,9 +1,9 @@
 import { Navigate, useParams } from "react-router-dom";
 import { NadeTypeTabs } from "../components/NadeTypeTabs";
 import { ZoneList } from "../components/ZoneList";
-import { BackLink } from "../components/layout/BackLink";
-import { PageContainer } from "../components/layout/PageContainer";
-import { getLineups, getMap, groupByZone } from "../lib/loadLineups";
+import { BackgroundPage } from "../components/layout/BackgroundPage";
+import { Breadcrumb } from "../components/layout/Breadcrumb";
+import { NADE_TYPE_LABELS, getLineups, getMap, getMapBackground, groupByZone } from "../lib/loadLineups";
 import type { MapId, NadeType, Side } from "../types/lineup";
 
 const VALID_SIDES: Side[] = ["CT", "T"];
@@ -18,7 +18,7 @@ export default function NadeTypePage() {
   const isValidNadeType = nadeType ? VALID_NADE_TYPES.includes(nadeType) : false;
 
   if (!map || !mapId || !side || !isValidSide) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/maps" replace />;
   }
 
   if (!nadeType || !isValidNadeType) {
@@ -28,15 +28,22 @@ export default function NadeTypePage() {
   const zones = groupByZone(getLineups(mapId, side, nadeType));
 
   return (
-    <PageContainer>
+    <BackgroundPage image={getMapBackground(mapId)}>
       <div className="flex flex-col gap-2">
-        <BackLink to={`/maps/${mapId}`} label="Equipo" />
-        <h1 className="text-2xl font-bold text-gray-100">
+        <Breadcrumb
+          items={[
+            { label: "Granadas", to: "/maps" },
+            { label: map.name, to: `/maps/${mapId}` },
+            { label: side },
+            { label: NADE_TYPE_LABELS[nadeType] },
+          ]}
+        />
+        <h1 className="text-2xl font-extrabold tracking-tight text-gray-50">
           {map.name} · {side}
         </h1>
       </div>
       <NadeTypeTabs mapId={mapId} side={side} active={nadeType} />
       <ZoneList zones={zones} />
-    </PageContainer>
+    </BackgroundPage>
   );
 }

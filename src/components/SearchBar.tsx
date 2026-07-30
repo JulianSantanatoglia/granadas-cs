@@ -8,7 +8,7 @@ interface SearchBarProps {
 
 export function SearchBar({ value, onChange, placeholder = "Buscar mapa, zona o posición…" }: SearchBarProps) {
   return (
-    <div className="flex items-center gap-2 rounded-lg border border-border bg-surface px-3 py-2.5">
+    <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-surface px-4 py-3 shadow-md shadow-black/20 transition-colors focus-within:border-accent/50">
       <Search size={16} className="shrink-0 text-gray-500" />
       <input
         type="text"
