@@ -1,0 +1,82 @@
+[
+  {
+    "id": "dust2-t-mid-smoke-xbox",
+    "map": "dust2",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Xbox",
+    "movement": "running",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "external",
+      "url": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    "notes": "Placeholder de ejemplo — reemplazar por lineup real.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "dust2-t-longa-smoke-blue-corner",
+    "map": "dust2",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Long A",
+    "title": "FROM T Spawn",
+    "position": "Blue Corner",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "external",
+      "url": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    "notes": "Placeholder de ejemplo — reemplazar por lineup real.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "dust2-ct-catwalk-molotov-car",
+    "map": "dust2",
+    "side": "CT",
+    "nadeType": "molotov",
+    "zone": "Catwalk",
+    "title": "FROM CT Spawn",
+    "position": "Car",
+    "movement": "jump",
+    "technique": "jumpthrow",
+    "media": {
+      "kind": "video",
+      "source": "external",
+      "url": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    "notes": "Placeholder de ejemplo — reemplazar por lineup real.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "dust2-ct-bsite-flash-from-ct",
+    "map": "dust2",
+    "side": "CT",
+    "nadeType": "flash",
+    "zone": "B Site",
+    "title": "FROM CT",
+    "position": "Door",
+    "movement": "walking",
+    "technique": "leftclick",
+    "media": {
+      "kind": "image",
+      "source": "external",
+      "url": "https://picsum.photos/id/1011/800/450"
+    },
+    "notes": "Placeholder de ejemplo — reemplazar por lineup real.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  }
+]
