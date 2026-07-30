@@ -25,11 +25,18 @@ const mapMetaSchema = z.object({
   thumbnail: z.string().min(1),
 });
 
+const mediaUrlSchema = z
+  .string()
+  .min(1)
+  .refine((val) => val.startsWith("/") || /^https?:\/\//.test(val), {
+    message: "debe ser una ruta relativa (empieza con /) o una URL http(s) absoluta",
+  });
+
 const lineupMediaSchema = z.object({
   kind: z.enum(["video", "image"]),
   source: z.enum(["external", "upload"]),
-  url: z.string().url(),
-  thumbnailUrl: z.string().url().optional(),
+  url: mediaUrlSchema,
+  thumbnailUrl: mediaUrlSchema.optional(),
 });
 
 const lineupSchema = z.object({

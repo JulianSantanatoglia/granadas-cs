@@ -1,0 +1,317 @@
+[
+  {
+    "id": "mirage-ct-apartments-smoke-apartments",
+    "map": "mirage",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Apartments",
+    "title": "FROM CT Spawn",
+    "position": "Apartments",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/CT/SMOKE/apts.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/CT/SMOKE/apts.png"
+    },
+    "notes": "Humo hacia Apartments para bloquear el acceso de los T por esa zona.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-ct-apartments-smoke-back-apartments",
+    "map": "mirage",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Apartments",
+    "title": "FROM CT Spawn",
+    "position": "Back Apartments",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/CT/SMOKE/back-apts.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/CT/SMOKE/back-apts.png"
+    },
+    "notes": "Humo hacia el fondo de Apartments para tapar esa entrada.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-ct-palace-smoke-palace",
+    "map": "mirage",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Palace",
+    "title": "FROM CT",
+    "position": "Palace",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/CT/SMOKE/palace-fromct.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/CT/SMOKE/palace-fromct.png"
+    },
+    "notes": "Humo hacia Palace tirado desde CT para tapar esa entrada a A.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-ct-ramp-smoke-ramp",
+    "map": "mirage",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Ramp",
+    "title": "FROM CT",
+    "position": "Ramp",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/CT/SMOKE/ramp-fromct.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/CT/SMOKE/ramp-fromct.png"
+    },
+    "notes": "Humo hacia Ramp tirado desde CT para tapar el acceso de los T a A.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-ct-mid-smoke-short",
+    "map": "mirage",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM CT Spawn",
+    "position": "Short",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/CT/SMOKE/short.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/CT/SMOKE/short.png"
+    },
+    "notes": "Humo hacia Short para bloquear el peek de los T desde Mid.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-catwalk-to-short",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM Catwalk",
+    "position": "Short",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/catwalk-short.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/catwalk-short.png"
+    },
+    "notes": "Humo hacia Short tirado desde Catwalk para tapar la visión de los CT.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-connector",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Connector",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/conector-mid.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/conector-mid.png"
+    },
+    "notes": "Humo sobre Connector para cruzar Mid sin exposición.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-ct-smoke-ct-spawn",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "CT Spawn",
+    "title": "FROM Ramp",
+    "position": "CT Spawn",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/ct-fromramp.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/ct-fromramp.png"
+    },
+    "notes": "Humo hacia la base CT tirado desde Ramp para ejecutar A.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-a-site-smoke-stairs",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "A Site",
+    "title": "FROM Ramp",
+    "position": "Stairs",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/escalera-fromramp.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/escalera-fromramp.png"
+    },
+    "notes": "Humo hacia Stairs (Escalera) tirado desde Ramp para tapar el sitio A.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-jungle",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Jungle",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/jungla.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/jungla.png"
+    },
+    "notes": "Humo sobre Jungle para cruzar Mid sin ser visto.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-jungle-connector",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Jungle + Connector",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/junglayconector.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/junglayconector.png"
+    },
+    "notes": "Humo doble que tapa Jungle y Connector al mismo tiempo.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-left-arch",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Left Arch",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/left-arch.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/left-arch.png"
+    },
+    "notes": "Humo sobre Left Arch para tapar la visión de los CT desde ahí.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-market-door",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Market Door",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/puerta-mercado.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/puerta-mercado.png"
+    },
+    "notes": "Humo sobre la puerta del Mercado para tapar esa entrada a Mid.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-market-window",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Market Window",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/ventana-mercado.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/ventana-mercado.png"
+    },
+    "notes": "Humo sobre la ventana del Mercado para tapar esa línea de visión.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "mirage-t-mid-smoke-window",
+    "map": "mirage",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Window",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/MIRAGE/TT/SMOKE/ventana.webm",
+      "thumbnailUrl": "/images/granadas/MIRAGE/TT/SMOKE/ventana.png"
+    },
+    "notes": "Humo sobre Window para tapar la visión de los CT en Mid.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  }
+]

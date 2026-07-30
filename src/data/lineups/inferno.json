@@ -1,0 +1,212 @@
+[
+  {
+    "id": "inferno-ct-banana-smoke-banana",
+    "map": "inferno",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Banana",
+    "title": "FROM CT",
+    "position": "Banana",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/CT/SMOKE/banana-desdect.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/CT/SMOKE/banana-desdect.png"
+    },
+    "notes": "Humo hacia Banana tirado desde CT para tapar el paso de los T.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-ct-b-site-smoke-entrada-banana",
+    "map": "inferno",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "B Site",
+    "title": "FROM CT",
+    "position": "Entrada Banana",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/CT/SMOKE/entrada-banana-b.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/CT/SMOKE/entrada-banana-b.png"
+    },
+    "notes": "Humo sobre la entrada de Banana a B para bloquear el ingreso de los T.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-ct-mid-smoke-mid",
+    "map": "inferno",
+    "side": "CT",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM CT",
+    "position": "Mid",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/CT/SMOKE/medio-tt.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/CT/SMOKE/medio-tt.png"
+    },
+    "notes": "Humo hacia Mid para tapar el peek de los T desde esa zona.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-a-site-smoke-arena",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "A Site",
+    "title": "FROM Mid Falso",
+    "position": "Arena",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/arena-desdemidfalso.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/arena-desdemidfalso.png"
+    },
+    "notes": "Humo hacia Arena tirado desde Mid Falso para tapar la visión de CT en el sitio A.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-b-site-smoke-entrada-b",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "B Site",
+    "title": "FROM T Spawn",
+    "position": "Entrada B",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/entrada-b-ct.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/entrada-b-ct.png"
+    },
+    "notes": "Humo sobre la entrada a B para tapar la visión de los CT.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-b-site-smoke-biblioteca",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "B Site",
+    "title": "FROM T Spawn",
+    "position": "Biblioteca",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/entrada-biblioteca.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/entrada-biblioteca.png"
+    },
+    "notes": "Humo en la entrada de Biblioteca para bloquear la visión hacia B.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-b-site-smoke-iglesia",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "B Site",
+    "title": "FROM T Spawn",
+    "position": "Iglesia",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/iglesia-parab.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/iglesia-parab.png"
+    },
+    "notes": "Humo desde la zona de la Iglesia, usado camino a B para tapar la visión de los CT.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-mid-smoke-large",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Large",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/large.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/large.png"
+    },
+    "notes": "Humo en Large. Revisar nombre exacto de la posición.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-mid-smoke-mid",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "Mid",
+    "title": "FROM T Spawn",
+    "position": "Mid",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/mid-desdeTT.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/mid-desdeTT.png"
+    },
+    "notes": "Humo que tapa Mid para cruzar sin ser visto desde CT.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "inferno-t-a-site-smoke-short",
+    "map": "inferno",
+    "side": "T",
+    "nadeType": "smoke",
+    "zone": "A Site",
+    "title": "FROM T Spawn",
+    "position": "Short",
+    "movement": "stationary",
+    "technique": "normal",
+    "media": {
+      "kind": "video",
+      "source": "upload",
+      "url": "/images/granadas/INFERNO/TT/SMOKE/short.webm",
+      "thumbnailUrl": "/images/granadas/INFERNO/TT/SMOKE/short.png"
+    },
+    "notes": "Humo en Short para tapar la visión de los CT en A.",
+    "learned": false,
+    "createdAt": "2026-07-30T00:00:00.000Z",
+    "updatedAt": "2026-07-30T00:00:00.000Z"
+  }
+]

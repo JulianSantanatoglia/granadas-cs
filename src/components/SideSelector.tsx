@@ -5,22 +5,21 @@ interface SideSelectorProps {
   mapId: MapId;
 }
 
-const sides: { side: Side; label: string }[] = [
-  { side: "CT", label: "Counter-Terrorist" },
-  { side: "T", label: "Terrorist" },
+const sides: { side: Side; label: string; image: string }[] = [
+  { side: "CT", label: "Counter-Terrorist", image: "/images/ct-tt/CT.png" },
+  { side: "T", label: "Terrorist", image: "/images/ct-tt/TT.png" },
 ];
 
 export function SideSelector({ mapId }: SideSelectorProps) {
   return (
     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-      {sides.map(({ side, label }) => (
+      {sides.map(({ side, label, image }) => (
         <Link
           key={side}
           to={`/maps/${mapId}/${side}/smoke`}
-          className="flex flex-col items-center gap-1 rounded-xl border border-border bg-surface p-6 text-center transition-colors hover:border-accent/50 hover:bg-surface-hover"
+          className="overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-accent/50"
         >
-          <span className="text-2xl font-bold text-gray-100">{side}</span>
-          <span className="text-sm text-gray-400">{label}</span>
+          <img src={image} alt={label} className="aspect-video w-full object-cover" />
         </Link>
       ))}
     </div>

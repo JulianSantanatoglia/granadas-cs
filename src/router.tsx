@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppShell } from "./components/layout/AppShell";
+import CalloutDetailPage from "./pages/CalloutDetailPage";
+import CalloutsPage from "./pages/CalloutsPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import HomeMapsPage from "./pages/HomeMapsPage";
 import LineupDetailPage from "./pages/LineupDetailPage";
@@ -15,6 +17,8 @@ export function AppRouter() {
           <Route path="/" element={<HomeMapsPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/callouts" element={<CalloutsPage />} />
+          <Route path="/callouts/:mapId" element={<CalloutDetailPage />} />
           <Route path="/maps/:mapId" element={<TeamPage />} />
           <Route path="/maps/:mapId/:side" element={<NadeTypePage />} />
           <Route path="/maps/:mapId/:side/:nadeType" element={<NadeTypePage />} />

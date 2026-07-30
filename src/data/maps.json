@@ -1,11 +1,11 @@
 [
-  { "id": "dust2", "name": "Dust II", "order": 1, "thumbnail": "/maps/dust2.jpg" },
-  { "id": "mirage", "name": "Mirage", "order": 2, "thumbnail": "/maps/mirage.jpg" },
-  { "id": "inferno", "name": "Inferno", "order": 3, "thumbnail": "/maps/inferno.jpg" },
-  { "id": "nuke", "name": "Nuke", "order": 4, "thumbnail": "/maps/nuke.jpg" },
-  { "id": "ancient", "name": "Ancient", "order": 5, "thumbnail": "/maps/ancient.jpg" },
-  { "id": "anubis", "name": "Anubis", "order": 6, "thumbnail": "/maps/anubis.jpg" },
-  { "id": "vertigo", "name": "Vertigo", "order": 7, "thumbnail": "/maps/vertigo.jpg" },
-  { "id": "overpass", "name": "Overpass", "order": 8, "thumbnail": "/maps/overpass.jpg" },
-  { "id": "train", "name": "Train", "order": 9, "thumbnail": "/maps/train.jpg" }
+  { "id": "dust2", "name": "Dust II", "order": 1, "thumbnail": "/images/nombres-mapas/dust2.png" },
+  { "id": "mirage", "name": "Mirage", "order": 2, "thumbnail": "/images/nombres-mapas/mirage.png" },
+  { "id": "inferno", "name": "Inferno", "order": 3, "thumbnail": "/images/nombres-mapas/inferno.png" },
+  { "id": "nuke", "name": "Nuke", "order": 4, "thumbnail": "/images/nombres-mapas/nuke.png" },
+  { "id": "ancient", "name": "Ancient", "order": 5, "thumbnail": "/images/nombres-mapas/ancient.png" },
+  { "id": "anubis", "name": "Anubis", "order": 6, "thumbnail": "/images/nombres-mapas/anubis.png" },
+  { "id": "vertigo", "name": "Vertigo", "order": 7, "thumbnail": "/images/nombres-mapas/vertigo.png" },
+  { "id": "overpass", "name": "Overpass", "order": 8, "thumbnail": "/images/nombres-mapas/overpass.png" },
+  { "id": "train", "name": "Train", "order": 9, "thumbnail": "/images/nombres-mapas/train.png" }
 ]

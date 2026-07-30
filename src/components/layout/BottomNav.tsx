@@ -1,4 +1,4 @@
-import { Bomb, Heart, Search } from "lucide-react";
+import { Bomb, Heart, Map, Search } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 interface NavItem {
@@ -8,7 +8,8 @@ interface NavItem {
 }
 
 const items: NavItem[] = [
-  { to: "/", label: "Mapas", icon: Bomb },
+  { to: "/", label: "Granadas", icon: Bomb },
+  { to: "/callouts", label: "Mapas", icon: Map },
   { to: "/search", label: "Buscar", icon: Search },
   { to: "/favorites", label: "Favoritos", icon: Heart },
 ];

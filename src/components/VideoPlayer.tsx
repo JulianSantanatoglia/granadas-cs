@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 
 interface VideoPlayerProps {
   url: string;
+  poster?: string;
 }
 
 const SPEEDS = [0.5, 1, 1.5] as const;
@@ -15,7 +16,7 @@ function formatTime(seconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-export function VideoPlayer({ url }: VideoPlayerProps) {
+export function VideoPlayer({ url, poster }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [failed, setFailed] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -74,11 +75,20 @@ export function VideoPlayer({ url }: VideoPlayerProps) {
         ref={videoRef}
         preload="metadata"
         loop={loop}
+        poster={poster}
         className="aspect-video w-full rounded-lg border border-border bg-black"
         onError={() => setFailed(true)}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
-        onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+        onLoadedMetadata={(e) => {
+          const video = e.currentTarget;
+          setDuration(video.duration);
+          // Sin poster propio: forzar un seek mínimo para que el navegador
+          // pinte el primer frame como miniatura en vez de dejarlo en negro.
+          if (!poster && video.currentTime === 0) {
+            video.currentTime = Math.min(0.1, video.duration || 0.1);
+          }
+        }}
         onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
         onClick={togglePlay}
       >

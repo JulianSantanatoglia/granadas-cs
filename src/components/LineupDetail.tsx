@@ -45,7 +45,7 @@ export function LineupDetail({ lineup }: LineupDetailProps) {
       </div>
 
       {lineup.media.kind === "video" ? (
-        <VideoPlayer url={lineup.media.url} />
+        <VideoPlayer url={lineup.media.url} poster={lineup.media.thumbnailUrl} />
       ) : (
         <img
           src={lineup.media.url}

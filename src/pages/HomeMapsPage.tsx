@@ -11,7 +11,7 @@ export default function HomeMapsPage() {
         <h1 className="text-2xl font-bold text-gray-100">Granadas CS2</h1>
         <p className="text-sm text-gray-400">Lineups por mapa, sin paywall.</p>
       </header>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <div className="grid grid-cols-1 justify-items-center gap-3 sm:grid-cols-3 sm:justify-items-stretch">
         {maps.map((map) => (
           <MapCard key={map.id} map={map} />
         ))}

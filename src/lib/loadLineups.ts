@@ -1,11 +1,13 @@
 import mapsData from "../data/maps.json";
 import dust2 from "../data/lineups/dust2.json";
+import inferno from "../data/lineups/inferno.json";
+import mirage from "../data/lineups/mirage.json";
 import type { Lineup, MapId, MapMeta, NadeType, Side } from "../types/lineup";
 
 const lineupsByMap: Record<MapId, Lineup[]> = {
   dust2: dust2 as Lineup[],
-  mirage: [],
-  inferno: [],
+  mirage: mirage as Lineup[],
+  inferno: inferno as Lineup[],
   nuke: [],
   ancient: [],
   anubis: [],
